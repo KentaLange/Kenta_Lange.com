@@ -1,0 +1,349 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Kenta Lange</title>
+		<style>
+			@font-face {
+				font-family: 'Radon';
+				src: url('https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@main/unhinted/ttf/NotoSans/NotoSans-Regular.ttf') format('truetype');
+				font-weight: 400;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Radon';
+				src: url('https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@main/unhinted/ttf/NotoSans/NotoSans-Light.ttf') format('truetype');
+				font-weight: 300;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Radon';
+				src: url('https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@main/unhinted/ttf/NotoSans/NotoSans-Medium.ttf') format('truetype');
+				font-weight: 500;
+				font-display: swap;
+			}
+
+			:root {
+				--color-bg: #1e1e1b;
+				--color-text: #d5d2c5;
+				--color-accent: #17ccea;
+				--color-accent-alt: #b0dc96;
+				--color-muted: rgba(213, 210, 197, 0.7);
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html {
+				scroll-behavior: smooth;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			::-webkit-scrollbar {
+				display: none;
+			}
+
+			html {
+				-ms-overflow-style: none;
+				scrollbar-width: none;
+			}
+
+			body {
+				font-family: 'Radon', -apple-system, BlinkMacSystemFont, sans-serif;
+				background-color: var(--color-bg);
+				color: var(--color-text);
+				line-height: 1.7;
+				font-size: 1.2rem;
+				font-weight: 400;
+				max-width: 700px;
+				margin: 0 auto;
+				padding: 24px;
+				text-wrap: balance;
+			}
+
+			.name {
+				font-size: 3rem;
+				font-weight: 300;
+				letter-spacing: -0.02em;
+				margin-bottom: 0.5rem;
+				color: var(--color-text);
+			}
+
+			.title {
+				font-size: 1.2rem;
+				color: var(--color-muted);
+				margin-bottom: 0.5rem;
+				font-weight: 400;
+			}
+
+			.location {
+				color: var(--color-muted);
+				margin-bottom: 2rem;
+				font-size: 1rem;
+			}
+
+			.links {
+				margin-bottom: 3rem;
+			}
+
+			.links a {
+				color: var(--color-accent);
+				text-decoration: none;
+				margin-right: 1.5rem;
+				font-size: 1rem;
+				transition: color 0.2s ease;
+			}
+
+			.links a:hover {
+				color: var(--color-accent-alt);
+			}
+
+			.links a:focus {
+				outline: none;
+			}
+
+			.section {
+				margin-bottom: 3rem;
+			}
+
+			.section-title {
+				font-size: 1.5rem;
+				font-weight: 500;
+				margin-bottom: 1.5rem;
+				color: var(--color-text);
+				letter-spacing: -0.01em;
+			}
+
+			.experience-item {
+				margin-bottom: 2.5rem;
+			}
+
+			.company {
+				font-size: 1.2rem;
+				font-weight: 500;
+				color: var(--color-text);
+				margin-bottom: 0.25rem;
+			}
+
+			.role {
+				font-size: 1rem;
+				color: var(--color-muted);
+				margin-bottom: 0.25rem;
+			}
+
+			.duration {
+				color: var(--color-muted);
+				font-size: 0.9rem;
+				margin-bottom: 1rem;
+			}
+
+			.description {
+				color: var(--color-text);
+				line-height: 1.7;
+				font-size: 1rem;
+			}
+
+			.skills-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1rem;
+			}
+
+			.skill-item {
+				color: var(--color-text);
+				font-size: 1rem;
+			}
+
+			.skill-item:not(:last-child)::after {
+				content: " •";
+				color: var(--color-muted);
+				margin-left: 1rem;
+			}
+
+			p {
+				margin-bottom: 1.5rem;
+			}
+
+			@media (max-width: 768px) {
+				body {
+					font-size: 1rem;
+					padding: 24px 16px;
+				}
+
+				.name {
+					font-size: 2.5rem;
+				}
+
+				.links a {
+					display: block;
+					margin-bottom: 0.5rem;
+					margin-right: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="name">Kenta Lange</h1>
+		<p class="title">Computer Science Student</p>
+		<p class="location">Tuckahoe, New York, United States</p>
+		
+		<div class="links">
+			<a href="https://www.linkedin.com/in/kentalange" target="_blank">LinkedIn</a>
+			<a href="https://www.hackerrank.com/KentaLange" target="_blank">HackerRank</a>
+			<a href="https://github.com/KentaLange" target="_blank">GitHub</a>
+			<a href="https://tinyurl.com/KentaLinkedIn" target="_blank">Resume</a>
+		</div>
+
+		<section class="section">
+			<h2 class="section-title">About</h2>
+			<p>
+				Bilingual Computer Science student at University at Albany with experience in customer service 
+				and technical support. Fluent in both Japanese and English, with a strong background in 
+				project planning and wireless networking. Passionate about technology and helping bridge 
+				communication gaps in diverse environments.
+			</p>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Experience</h2>
+			
+			<div class="experience-item">
+				<div class="company">NIPPON DAIDO, INC</div>
+				<div class="role">Japanese Super Market Associate</div>
+				<div class="duration">June 2024 - January 2025 (8 months)</div>
+				<p class="description">
+					Provided exceptional customer service in both Japanese and English, 
+					helping customers navigate products and services in a multicultural retail environment.
+				</p>
+			</div>
+
+			<div class="experience-item">
+				<div class="company">CENTRAL AVENUE DENTAL ARTS</div>
+				<div class="role">Bilingual Front Desk Receptionist</div>
+				<div class="duration">June 2021 - July 2022 (1 year 2 months)</div>
+				<p class="description">
+					Managed front desk operations including patient calls and appointment scheduling. 
+					Assisted medical staff with tool organization and sanitization. Provided translation 
+					services for Japanese patients, bridging language barriers between English and Japanese.
+				</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Education</h2>
+			
+			<div class="experience-item">
+				<div class="company">University at Albany, State University of New York</div>
+				<div class="role">B.S in Computer Science, Minor in Math</div>
+				<div class="duration">August 2022 - December 2025 (Expected Graduation)</div>
+				<p class="description">GPA: 3.2</p>
+			</div>
+
+			<div class="experience-item">
+				<div class="company">Eastchester Senior High School</div>
+				<div class="role">High School Diploma, Computer Science</div>
+				<div class="duration">2018 - 2022</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Skills & Awards</h2>
+			<div class="skills-list">
+				<span class="skill-item">Java</span>
+				<span class="skill-item">C#</span>
+				<span class="skill-item">C</span>
+				<span class="skill-item">Python</span>
+				<span class="skill-item">Unity</span>
+				<span class="skill-item">Bash/Linux</span>
+				<span class="skill-item">Japanese (Native)</span>
+				<span class="skill-item">English (Fluent)</span>
+				<span class="skill-item">Wireless Networking</span>
+				<span class="skill-item">Project Planning</span>
+				<span class="skill-item">Customer Service</span>
+				<span class="skill-item">Translation Services</span>
+			</div>
+			
+			<div class="experience-item">
+				<div class="company">Self-Directed Learning</div>
+				<div class="duration">2024</div>
+				<p class="description">
+					• Goldman Sachs Essential Career Readiness Institute (Fall 2024)<br/>
+					• Khan Academy Personal Finance (Summer 2024)<br/>
+					• Selected DeepLearning.AI courses<br/>
+					• MIT Intro to Deep Learning<br/>
+					• AWS Summit NYC 2024
+				</p>
+			</div>
+		</section>
+	</body>
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			console.log('Home page loaded');
+			
+			const hero = document.querySelector('.hero');
+			const navLinks = document.querySelectorAll('nav a');
+			const sections = document.querySelectorAll('section');
+			
+			function initializeHome() {
+				setupNavigation();
+				setupHeroAnimation();
+				setupScrollEffects();
+			}
+			
+			function setupNavigation() {
+				navLinks.forEach(link => {
+					link.addEventListener('click', function(e) {
+						e.preventDefault();
+						const targetId = (e.target as HTMLAnchorElement).getAttribute('href')?.substring(1);
+						if (targetId) {
+							const targetSection = document.getElementById(targetId);
+							if (targetSection) {
+								targetSection.scrollIntoView({
+									behavior: 'smooth'
+								});
+							}
+						}
+					});
+				});
+			}
+			
+			function setupHeroAnimation() {
+				if (hero) {
+					hero.classList.add('animate-in');
+				}
+			}
+			
+			function setupScrollEffects() {
+				window.addEventListener('scroll', function() {
+					const scrolled = window.pageYOffset;
+					const parallax = document.querySelector('.parallax');
+					
+					if (parallax) {
+						(parallax as HTMLElement).style.transform = `translateY(${scrolled * 0.5}px)`;
+					}
+					
+					sections.forEach(section => {
+						const sectionTop = (section as HTMLElement).offsetTop;
+						const windowHeight = window.innerHeight;
+						
+						if (scrolled > sectionTop - windowHeight + 100) {
+							section.classList.add('visible');
+						}
+					});
+				});
+			}
+			
+			initializeHome();
+		});
+	</script>
+</html>
