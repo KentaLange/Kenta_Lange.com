@@ -1,8 +1,17 @@
+# Exported from Render on 2025-06-09T00:59:26Z
 services:
-  - type: web
-    name: kenta-lange-portfolio
-    env: static
-    buildCommand: npm install && npm run build
-    staticPublishPath: ./dist
-    domains:
-      - kenta-lange.onrender.com
+- type: web
+  name: Kenta_Lange.com
+  runtime: static
+  repo: https://github.com/KentaLange/Kenta_Lange.com
+  branch: fixins
+  buildCommand: npm run build
+  staticPublishPath: dist
+  domains:
+  - kentalange.com
+  - www.kentalange.com
+  autoDeployTrigger: commit
+  previews:
+    generation: automatic
+version: "1"
+
