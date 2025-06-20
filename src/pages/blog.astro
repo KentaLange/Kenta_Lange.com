@@ -1,0 +1,225 @@
+---
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Blog - Kenta Lange</title>
+		<style>
+			@font-face {
+				font-family: 'Radon';
+				src: url('https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@main/unhinted/ttf/NotoSans/NotoSans-Regular.ttf') format('truetype');
+				font-weight: 400;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Radon';
+				src: url('https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@main/unhinted/ttf/NotoSans/NotoSans-Light.ttf') format('truetype');
+				font-weight: 300;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Radon';
+				src: url('https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@main/unhinted/ttf/NotoSans/NotoSans-Medium.ttf') format('truetype');
+				font-weight: 500;
+				font-display: swap;
+			}
+
+			:root {
+				--color-bg: #1e1e1b;
+				--color-text: #d5d2c5;
+				--color-accent: #17ccea;
+				--color-accent-alt: #b0dc96;
+				--color-muted: rgba(213, 210, 197, 0.7);
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html {
+				scroll-behavior: smooth;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			::-webkit-scrollbar {
+				display: none;
+			}
+
+			html {
+				-ms-overflow-style: none;
+				scrollbar-width: none;
+			}
+
+			body {
+				font-family: 'Radon', -apple-system, BlinkMacSystemFont, sans-serif;
+				background-color: var(--color-bg);
+				color: var(--color-text);
+				line-height: 1.7;
+				font-size: 1.2rem;
+				font-weight: 400;
+				max-width: 900px;
+				margin: 0 auto;
+				padding: 24px;
+				text-wrap: balance;
+			}
+
+			.header {
+				margin-bottom: 3rem;
+				text-align: center;
+			}
+
+			.back-link {
+				color: var(--color-accent);
+				text-decoration: none;
+				margin-bottom: 2rem;
+				display: inline-block;
+				font-size: 1rem;
+				transition: color 0.2s ease;
+			}
+
+			.back-link:hover {
+				color: var(--color-accent-alt);
+			}
+
+			.page-title {
+				font-size: 3rem;
+				font-weight: 300;
+				letter-spacing: -0.02em;
+				margin-bottom: 1rem;
+				color: var(--color-text);
+			}
+
+			.page-subtitle {
+				font-size: 1.2rem;
+				color: var(--color-muted);
+				margin-bottom: 2rem;
+				font-weight: 400;
+			}
+
+			.blog-posts {
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+			}
+
+			.blog-post {
+				padding: 2rem;
+				border: 1px solid rgba(213, 210, 197, 0.1);
+				border-radius: 8px;
+				transition: border-color 0.2s ease;
+			}
+
+			.blog-post:hover {
+				border-color: rgba(213, 210, 197, 0.2);
+			}
+
+			.post-title {
+				font-size: 1.5rem;
+				font-weight: 500;
+				margin-bottom: 0.5rem;
+				color: var(--color-text);
+				letter-spacing: -0.01em;
+				transition: color 0.2s ease;
+			}
+
+			a.post-title-link {
+				text-decoration: none;
+			}
+
+			a.post-title-link:hover .post-title {
+				color: var(--color-accent);
+			}
+
+			.post-date {
+				color: var(--color-muted);
+				font-size: 0.9rem;
+				margin-bottom: 1rem;
+			}
+
+			.post-excerpt {
+				color: var(--color-text);
+				line-height: 1.7;
+				font-size: 1rem;
+			}
+
+			.no-posts {
+				text-align: center;
+				color: var(--color-muted);
+				font-size: 1.1rem;
+				margin: 4rem 0;
+			}
+
+			@media (max-width: 768px) {
+				body {
+					font-size: 1rem;
+					padding: 24px 16px;
+				}
+
+				.page-title {
+					font-size: 2.5rem;
+				}
+
+				.blog-post {
+					padding: 1.5rem;
+				}
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="header">
+			<a href="/" class="back-link">← Back to Home</a>
+			<h1 class="page-title">Blog</h1>
+			<p class="page-subtitle">Thoughts, learnings, and insights</p>
+		</div>
+
+		<div class="blog-posts">
+			<div class="blog-post">
+				<a href="https://www.linkedin.com/posts/kentalange_kenta-lange-activity-7336965589191536641-oKCg?utm_source=share&utm_medium=member_desktop&rcm=ACoAADkKIbQBvsG-aQT3LDjzH7szX-yXg6J5BBs" target="_blank" class="post-title-link">
+					<h2 class="post-title">Tech Week 1 Update</h2>
+				</a>
+				<div class="post-date">January 2025</div>
+				<p class="post-excerpt">
+					Hi everyone! This past Tech Week, I had the chance to attend several events. While I started off feeling anxious about diving into unfamiliar topics, I ended up having a great time learning about AI agents and generative AI through tech talks and a hackathon.
+				</p>
+				<div style="margin-top: 1rem; padding-left: 1rem; border-left: 2px solid var(--color-accent);">
+					<h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--color-text);">Here's what I learned:</h3>
+					<ul style="color: var(--color-text); line-height: 1.6; margin-left: 1rem; padding-left: 1rem; list-style-type: '・';">
+						<li>One of the biggest challenges I faced was understanding AI agents, since I didn't have much experience with them.</li>
+						<li>To get started, I began working on the AI certification course from Hugging Face to refresh the basics.</li>
+						<li>My first big step was joining the "Hacking Agents Hackathon NYC," which introduced me to powerful tools like Langflow and Twelve Labs. I plan to keep using these to develop my project: an AI Fighting Game Coach.</li>
+					</ul>
+				</div>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					As a bonus, I also created <a href="https://www.kentalange.com" target="_blank" style="color: var(--color-accent); text-decoration: none;">kentalange.com</a> using Claude for the first time. It was a great opportunity to see how modern LLMs can streamline workflows and boost results.
+				</p>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					I'm excited to use the knowledge I gained this week. Tech is moving faster than I can learn at school and in some jobs, so I'm going to keep grinding this summer to pull myself up to speed.
+				</p>
+			</div>
+
+			<div class="blog-post">
+				<h2 class="post-title">My Tech Week Update #2</h2>
+				<div class="post-date">January 2025</div>
+				<p class="post-excerpt">
+					Hello again!
+				</p>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					This week, I designed a website platform for my AI-powered fighting game coach. It was my first time integrating AI into a website, which was both exciting and challenging. My biggest struggle was connecting the frontend of the website with Langflow. Although I had set up the API connection, I couldn't parse the AI's responses correctly.
+				</p>
+				 <p class="post-excerpt" style="margin-top: 1rem;">
+					What helped me overcome this issue was a live-streaming session by the Langflow team. It not only helped me fix the bug but also sparked new ideas for my project. You can <a href="https://app.sequel.io/event/c42128eb-c59d-46f7-b3cd-ad2cf5fb1fab?joinCode=Gvwixrtcx1QF" target="_blank" style="color: var(--color-accent); text-decoration: none;">watch the session here</a>.
+				</p>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					I'm excited to continue learning and improving my project, with the goal of turning it into a full-fledged product.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
