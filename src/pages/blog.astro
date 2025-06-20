@@ -155,6 +155,39 @@
 				margin: 4rem 0;
 			}
 
+			.blog-nav {
+				margin-bottom: 3rem;
+				padding: 1.5rem;
+				border: 1px solid rgba(213, 210, 197, 0.1);
+				border-radius: 8px;
+				background-color: rgba(213, 210, 197, 0.02);
+			}
+
+			.blog-nav h3 {
+				font-size: 1.2rem;
+				font-weight: 500;
+				margin-bottom: 1rem;
+				color: var(--color-text);
+			}
+
+			.blog-nav ul {
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+				gap: 0.5rem;
+			}
+
+			.blog-nav a {
+				color: var(--color-accent);
+				text-decoration: none;
+				font-size: 1rem;
+				transition: color 0.2s ease;
+			}
+
+			.blog-nav a:hover {
+				color: var(--color-accent-alt);
+			}
+
 			@media (max-width: 768px) {
 				body {
 					font-size: 1rem;
@@ -179,12 +212,39 @@
 			<p class="page-subtitle">Thoughts, learnings, and insights</p>
 		</div>
 
+		<nav class="blog-nav">
+			<h3>Jump to:</h3>
+			<ul>
+				<li><a href="#week2">Week #2 - AI Fighting Game Coach & Langflow</a></li>
+				<li><a href="#week1">Week #1 - Tech Week Events & Learning</a></li>
+			</ul>
+		</nav>
+
 		<div class="blog-posts">
-			<div class="blog-post">
+		<div class="blog-post" id="week2">
+				<h2 class="post-title">My Tech Week Update #2</h2>
+				<div class="post-date">June 2025</div>
+				<p class="post-excerpt">
+					Hello again!
+				</p>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					This week, I designed a website platform for my AI-powered fighting game coach. It was my first time integrating AI into a website, which was both exciting and challenging. My biggest struggle was connecting the frontend of the website with Langflow. Although I had set up the API connection, I couldn't parse the AI's responses correctly.
+				</p>
+				 <p class="post-excerpt" style="margin-top: 1rem;">
+					What helped me overcome this issue was a live-streaming session by the Langflow team. It not only helped me fix the bug but also sparked new ideas for my project. You can <a href="https://app.sequel.io/event/c42128eb-c59d-46f7-b3cd-ad2cf5fb1fab?joinCode=Gvwixrtcx1QF" target="_blank" style="color: var(--color-accent); text-decoration: none;">watch the session here</a>.
+				</p>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					Additionally, I learned how to embed videos from DeepLearning.AI. Multimodal embeddings are an interesting topic and could be beneficial for my project.
+				</p>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					I'm excited to continue learning and improving my project, with the goal of turning it into a full-fledged product.
+				</p>
+			</div>
+			<div class="blog-post" id="week1">
 				<a href="https://www.linkedin.com/posts/kentalange_kenta-lange-activity-7336965589191536641-oKCg?utm_source=share&utm_medium=member_desktop&rcm=ACoAADkKIbQBvsG-aQT3LDjzH7szX-yXg6J5BBs" target="_blank" class="post-title-link">
 					<h2 class="post-title">Tech Week 1 Update</h2>
 				</a>
-				<div class="post-date">January 2025</div>
+				<div class="post-date">May 2025</div>
 				<p class="post-excerpt">
 					Hi everyone! This past Tech Week, I had the chance to attend several events. While I started off feeling anxious about diving into unfamiliar topics, I ended up having a great time learning about AI agents and generative AI through tech talks and a hackathon.
 				</p>
@@ -204,22 +264,7 @@
 				</p>
 			</div>
 
-			<div class="blog-post">
-				<h2 class="post-title">My Tech Week Update #2</h2>
-				<div class="post-date">January 2025</div>
-				<p class="post-excerpt">
-					Hello again!
-				</p>
-				<p class="post-excerpt" style="margin-top: 1rem;">
-					This week, I designed a website platform for my AI-powered fighting game coach. It was my first time integrating AI into a website, which was both exciting and challenging. My biggest struggle was connecting the frontend of the website with Langflow. Although I had set up the API connection, I couldn't parse the AI's responses correctly.
-				</p>
-				 <p class="post-excerpt" style="margin-top: 1rem;">
-					What helped me overcome this issue was a live-streaming session by the Langflow team. It not only helped me fix the bug but also sparked new ideas for my project. You can <a href="https://app.sequel.io/event/c42128eb-c59d-46f7-b3cd-ad2cf5fb1fab?joinCode=Gvwixrtcx1QF" target="_blank" style="color: var(--color-accent); text-decoration: none;">watch the session here</a>.
-				</p>
-				<p class="post-excerpt" style="margin-top: 1rem;">
-					I'm excited to continue learning and improving my project, with the goal of turning it into a full-fledged product.
-				</p>
-			</div>
+			
 		</div>
 	</body>
 </html>
