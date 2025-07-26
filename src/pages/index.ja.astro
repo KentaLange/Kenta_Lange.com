@@ -1,0 +1,158 @@
+---
+---
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>ケンタ・ランゲ</title>
+		<style>
+		@font-face {
+			font-family: 'Radon';
+			src: url('https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@main/unhinted/ttf/NotoSans/NotoSans-Regular.ttf') format('truetype');
+			font-weight: 400;
+			font-display: swap;
+		}
+		@font-face {
+			font-family: 'Radon';
+			src: url('https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@main/unhinted/ttf/NotoSans/NotoSans-Light.ttf') format('truetype');
+			font-weight: 300;
+			font-display: swap;
+		}
+		@font-face {
+			font-family: 'Radon';
+			src: url('https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@main/unhinted/ttf/NotoSans/NotoSans-Medium.ttf') format('truetype');
+			font-weight: 500;
+			font-display: swap;
+		}
+
+		:root {
+			--color-bg: #1e1e1b;
+			--color-text: #d5d2c5;
+			--color-accent: #17ccea;
+			--color-accent-alt: #b0dc96;
+			--color-muted: rgba(213, 210, 197, 0.7);
+		}
+
+		* {
+			margin: 0;
+			padding: 200;
+			box-sizing: border-box;
+		}
+
+		html {
+			scroll-behavior: smooth;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		::-webkit-scrollbar {
+			display: none;
+		}
+
+		html {
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+		}
+
+		body {
+			font-family: 'Radon', -apple-system, BlinkMacSystemFont, sans-serif;
+			background-color: var(--color-bg);
+			color: var(--color-text);
+			line-height: 1.7;
+			font-size: 1.2rem;
+			font-weight: 400;
+			max-width: 900px;
+			margin: 100 auto;
+			padding: 24px;
+			text-wrap: balance;
+		}
+		</style>
+	</head>
+	<body>
+		<div style="position: absolute; top: 24px; right: 24px;">
+			<a href="/index" style="background: var(--color-accent); color: var(--color-bg); border: none; border-radius: 4px; padding: 0.5rem 1rem; font-size: 1rem; text-decoration: none; cursor: pointer; transition: background 0.2s;">English</a>
+		</div>
+		<h1 class="name">ケンタ・ランゲ</h1>
+		<p class="title">コンピュータサイエンス専攻の学生</p>
+		<p class="location">アメリカ合衆国ニューヨーク州タカホー</p>
+		<div class="links" style="text-align: center;">
+			<a href="/blog.ja">ブログ</a>
+			<a href="https://www.linkedin.com/in/kentalange" target="_blank">LinkedIn</a>
+			<a href="https://www.hackerrank.com/KentaLange" target="_blank">HackerRank</a>
+			<a href="https://github.com/KentaLange" target="_blank">GitHub</a>
+			<a href="https://tinyurl.com/KentaLinkedIn" target="_blank">履歴書</a>
+		</div>
+		<section class="section">
+			<h2 class="section-title">自己紹介</h2>
+			<p>
+				ニューヨーク州立大学オールバニー校のバイリンガルコンピュータサイエンス専攻の学生です。カスタマーサービスと技術サポートの経験があります。日本語と英語の両方に堪能で、プロジェクト計画や無線ネットワークの知識も持っています。テクノロジーへの情熱と、多様な環境でのコミュニケーションギャップを埋めることにやりがいを感じています。
+			</p>
+		</section>
+		<div class="experience-item">
+			<div class="company">自主学習</div>
+			<div class="duration">2024年</div>
+			<p class="description">
+				・ゴールドマンサックス Essential Career Readiness Institute（2024年秋）<br/>
+				・カーンアカデミー パーソナルファイナンス（2024年夏）<br/>
+				・DeepLearning.AI 選抜コース<br/>
+				・MIT Deep Learning入門<br/>
+				・AWS Summit NYC 2024
+			</p>
+		</div>
+		<section class="section">
+			<h2 class="section-title">スキル・受賞歴</h2>
+			<div class="skills-list">
+				<span class="skill-item">Java</span>
+				<span class="skill-item">C#</span>
+				<span class="skill-item">C</span>
+				<span class="skill-item">Python</span>
+				<span class="skill-item">Unity</span>
+				<span class="skill-item">Bash/Linux</span>
+				<span class="skill-item">日本語（ネイティブ）</span>
+				<span class="skill-item">英語（流暢）</span>
+				<span class="skill-item">無線ネットワーク</span>
+				<span class="skill-item">プロジェクト計画</span>
+				<span class="skill-item">カスタマーサービス</span>
+				<span class="skill-item">翻訳サービス</span>
+			</div>
+		</section>
+		<section class="section">
+			<h2 class="section-title">職務経験</h2>
+			<div class="experience-item">
+				<div class="company">NIPPON DAIDO, INC</div>
+				<div class="role">日本食スーパーマーケット アソシエイト</div>
+				<div class="duration">2024年6月～2025年1月（8ヶ月）</div>
+				<p class="description">
+					日英両言語で優れたカスタマーサービスを提供し、多文化な小売環境でお客様をサポートしました。
+				</p>
+			</div>
+			<div class="experience-item">
+				<div class="company">CENTRAL AVENUE DENTAL ARTS</div>
+				<div class="role">バイリンガル受付</div>
+				<div class="duration">2021年6月～2022年7月（1年2ヶ月）</div>
+				<p class="description">
+					受付業務全般（患者対応・予約管理）を担当。医療スタッフの器具整理・消毒もサポート。日本人患者様のための通訳も行い、英語と日本語の架け橋となりました。
+				</p>
+			</div>
+		</section>
+		<section class="section">
+			<h2 class="section-title">学歴</h2>
+			<div class="experience-item">
+				<div class="company">ニューヨーク州立大学オールバニー校</div>
+				<div class="role">コンピュータサイエンス学士、数学副専攻</div>
+				<div class="duration">2022年8月～2025年12月（卒業予定）</div>
+				<p class="description">GPA: 3.2</p>
+			</div>
+			<div class="experience-item">
+				<div class="company">イーストチェスター高校</div>
+				<div class="role">高校卒業・コンピュータサイエンス</div>
+				<div class="duration">2018年～2022年</div>
+			</div>
+		</section>
+	</body>
+	<script>
+// ... existing code ...
+	</script>
+</html> 
