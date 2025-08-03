@@ -154,7 +154,7 @@
 				font-size: 1.1rem;
 				margin: 4rem 0;
 			}
-
+			/* The little gap between jump links and blog */
 			.blog-nav {
 				margin-bottom: 3rem;
 				padding: 1.5rem;
@@ -169,12 +169,12 @@
 				margin-bottom: 1rem;
 				color: var(--color-text);
 			}
-
+			/* The gap of each jump links */
 			.blog-nav ul {
 				list-style: none;
 				display: flex;
 				flex-direction: column;
-				gap: 0.5rem;
+				gap: .5rem;
 			}
 
 			.blog-nav a {
@@ -218,6 +218,7 @@
 		<nav class="blog-nav">
 			<h3>Jump to:</h3>
 			<ul>
+				<li><a href="#week4">Week #4 - Container Management & File Organization</a></li>
 				<li><a href="#week3">Week #3 - Website Deployment & Security</a></li>
 				<li><a href="#week2">Week #2 - AI Fighting Game Coach & Langflow</a></li>
 				<li><a href="#week1">Week #1 - Tech Week Events & Learning</a></li>
@@ -225,6 +226,31 @@
 		</nav>
 
 		<div class="blog-posts">
+		<div class="blog-post" id="week4">
+				<h2 class="post-title">My Tech Week Update #4</h2>
+				<div class="post-date">August 2025</div>
+				<p class="post-excerpt">
+					Hello everyone,
+				</p>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					I've been in Japan for two weeks now, and it's nice to be back home seeing my friends.
+				</p>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					Now for my tech update:
+				</p>
+				<div style="margin-top: 1rem; padding-left: 1rem; border-left: 2px solid var(--color-accent);">
+					<h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--color-text);">Here's what I learned:</h3>
+					<ul style="color: var(--color-text); line-height: 1.6; margin-left: 1rem; padding-left: 1rem; list-style-type: '・';">
+						<li>My Fighting Game Coach is starting to come together. The website is deployed and functional. However, the local and network versions of Langflow work very differently, so I had to create a new AI agent setup specifically for the network version.</li>
+						<li>My father suggested using a container to manage my website environment. A container basically keeps everything in one place, making deployment and maintenance easier. This time, I'm using Podman.</li>
+						<li>I made a crucial mistake during the project: I used uppercase letters in some filenames. It might seem minor, but when merging branches on GitHub, it caused conflicts that were a hassle to fix. When my father showed me how containers work, I had to reorganize a lot of my files and paths.</li>
+					</ul>
+				</div>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					The biggest lesson I learned this week: always keep your filenames lowercase. It'll save you a lot of trouble later on.
+				</p>
+			</div>
+
 		<div class="blog-post" id="week3">
 				<h2 class="post-title">My Tech Week Update #3</h2>
 				<div class="post-date">July 2025</div>
