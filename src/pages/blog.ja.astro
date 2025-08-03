@@ -30,7 +30,7 @@
 		:root {
 			--color-bg: #1e1e1b;
 			--color-text: #d5d2c5;
-			--color-accent: #17ccea;
+			--color-accent: #87ceeb;
 			--color-accent-alt: #b0dc96;
 			--color-muted: rgba(213, 210, 197, 0.7);
 		}
@@ -72,22 +72,47 @@
 	</head>
 	<body>
 		<div style="position: absolute; top: 24px; right: 24px;">
-			<a href="/blog" style="background: var(--color-accent); color: var(--color-bg); border: none; border-radius: 4px; padding: 0.5rem 1rem; font-size: 1rem; text-decoration: none; cursor: pointer; transition: background 0.2s;">English</a>
+			<a href="/blog/" style="background: var(--color-accent); color: var(--color-bg); border: none; border-radius: 4px; padding: 0.5rem 1rem; font-size: 1rem; text-decoration: none; cursor: pointer; transition: background 0.2s;">English</a>
 		</div>
 		<div class="header">
-			<a href="/index.ja" class="back-link">← ホームに戻る</a>
+			<a href="/index.html/" class="back-link">← ホームに戻る</a>
 			<h1 class="page-title">ブログ</h1>
 			<p class="page-subtitle">考え・学び・気づき</p>
 		</div>
 		<nav class="blog-nav">
 			<h3>ジャンプ:</h3>
 			<ul>
+				<li><a href="#week4">第4週 - コンテナ管理 & ファイル整理</a></li>
 				<li><a href="#week3">第3週 - ウェブサイト公開とセキュリティ</a></li>
 				<li><a href="#week2">第2週 - AI格闘ゲームコーチ & Langflow</a></li>
 				<li><a href="#week1">第1週 - テクウィークイベント & 学び</a></li>
 			</ul>
 		</nav>
 		<div class="blog-posts">
+			<div class="blog-post" id="week4">
+				<h2 class="post-title">テクウィークアップデート #4</h2>
+				<div class="post-date">2025年8月</div>
+				<p class="post-excerpt">
+					皆さんこんにちは、
+				</p>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					日本に約2週間滞在していますが、故郷に帰り、懐かしい友達と会え、とても充実しています。
+				</p>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					テクアップデートをお伝えします：
+				</p>
+				<div style="margin-top: 1rem; padding-left: 1rem; border-left: 2px solid var(--color-accent);">
+					<h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--color-text);">学び:</h3>
+					<ul style="color: var(--color-text); line-height: 1.6; margin-left: 1rem; padding-left: 1rem; list-style-type: '・';">
+						<li>格闘ゲームコーチが形になってきました。ウェブサイトは公開され、機能しています。しかし、ローカル版とネットワーク版のLangflowは動作が大きく異なるため、ネットワーク版専用の新しいAIエージェント設定を作成する必要がありました。</li>
+						<li>父がウェブサイト環境の管理にコンテナを使うことを提案しました。コンテナは基本的にすべてを一箇所にまとめることで、デプロイメントとメンテナンスが簡単になります。今回はPodmanを使用しています。</li>
+						<li>プロジェクト中に重大なミスを犯しました…それは、一部のファイル名に大文字を使用したことです。些細なことのように見えますが、GitHubでブランチをマージする際にコンフリクトが発生し、修正に手間がかかりました。父がコンテナの仕組みを教えてくれた時、多くのファイルとパスを再編成する必要がありました。</li>
+					</ul>
+				</div>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					今週学んだ最大の教訓：ファイル名は常に小文字にしておくと後々、多くのトラブルを避けられます。
+				</p>
+			</div>
 			<div class="blog-post" id="week3">
 				<h2 class="post-title">テクウィークアップデート #3</h2>
 				<div class="post-date">2025年7月</div>
@@ -103,7 +128,7 @@
 				<p class="post-excerpt" style="margin-top: 1rem;">プロジェクトは公開済みですが、Langflowとの連携に課題が残っています。今週は仕上げと今後の向上案を考える予定です。</p>
 			</div>
 			<div class="blog-post" id="week2">
-				<h2 class="post-title">テックウィークアップデート #2</h2>
+				<h2 class="post-title">テクウィークアップデート #2</h2>
 				<div class="post-date">2025年6月</div>
 				<p class="post-excerpt">こんにちは！</p>
 				<p class="post-excerpt" style="margin-top: 1rem;">今週はAI格闘ゲームコーチのウェブプラットフォームを設計しました。AIをウェブサイトに統合するのは初めてで、ワクワクしつつも苦労もありました。最大の課題はLangflowとのフロントエンド接続で、API接続はできたもののAIの解答を解析することがうまくいきませんでした。</p>
@@ -113,7 +138,7 @@
 			</div>
 			<div class="blog-post" id="week1">
 				<a href="https://www.linkedin.com/posts/kentalange_kenta-lange-activity-7336965589191536641-oKCg?utm_source=share&utm_medium=member_desktop&rcm=ACoAADkKIbQBvsG-aQT3LDjzH7szX-yXg6J5BBs" target="_blank" class="post-title-link">
-					<h2 class="post-title">テクウィーク1週目アップデート</h2>
+					<h2 class="post-title" style="color: white;">テクウィークアップデート #1</h2>
 				</a>
 				<div class="post-date">2025年5月</div>
 				<p class="post-excerpt">皆さんこんにちは！先週のテクウィークでは様々なイベントに参加しました。最初は未知の分野に不安もありましたが、AIエージェントや生成AIについての講演やハッカソンを通じて多くを学びました。</p>
