@@ -82,6 +82,7 @@
 		<nav class="blog-nav">
 			<h3>ジャンプ:</h3>
 			<ul>
+				<li><a href="#gtc-2026">GTC 2026</a></li>
 				<li><a href="#ai-tinkerers">日本でのAI Tinkerers Meetup</a></li>
 				<li><a href="#ai-summit">AI Engineering Code Summit</a></li>
 				<li><a href="#week4">第4週 - コンテナ管理 & ファイル整理</a></li>
@@ -91,6 +92,42 @@
 			</ul>
 		</nav>
 		<div class="blog-posts">
+			<div class="blog-post" id="gtc-2026">
+				<h2 class="post-title">GTC 2026</h2>
+				<div class="post-date">2026年4月</div>
+				<p class="post-excerpt">
+					最近、世界最大のAIカンファレンスであるNVIDIA GTCに初めて参加しました。深い技術的な学びを得られ、貴重なネットワーキングの機会にも恵まれた素晴らしい経験でした。
+				</p>
+
+				<div style="margin-top: 1rem; padding-left: 1rem; border-left: 2px solid var(--color-accent);">
+					<h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--color-text);">基調講演での気づき</h3>
+					<p class="post-excerpt" style="margin-top: 0.5rem;">
+						初日には、ジェンスン・フアン氏がメインステージに登壇し、AIの未来についてのビジョンを共有しました。彼の基調講演は、次世代のアクセラレーテッド・コンピューティングが世界の産業をどう根本的に作り変えるかを詳細に説明するもので、その週の期待値を大いに高めました。
+					</p>
+
+					<h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; margin-top: 1.5rem; color: var(--color-text);">技術の深掘り：再帰的学習モデル (RLM)</h3>
+					<p class="post-excerpt" style="margin-top: 0.5rem;">
+						私が目にした中で最も魅力的だったプロジェクトの一つは、再帰的学習モデル（RLM）に関する論文でした。このアプローチは非常に効率的です：
+					</p>
+					<ul style="color: var(--color-text); line-height: 1.6; margin-left: 1rem; padding-left: 1rem; list-style-type: '・';">
+						<li><strong>分解：</strong>複雑なプロンプトを再帰的に、管理しやすい小さなフラグメントに分割します。</li>
+						<li><strong>実行：</strong>Pythonベースのコントローラーが、これらのフラグメントを小規模な言語モデル（LM）に送ります。</li>
+						<li><strong>再構築：</strong>個々の出力をつなぎ合わせ、最終的な一貫性のある回答を形成します。</li>
+					</ul>
+					<p class="post-excerpt" style="margin-top: 0.5rem;">
+						その結果、非常にトークン効率の高いワークフローが実現します。RLMを使用することで、小規模なモデルでも限られた量の高品質なデータで訓練でき、はるかに大規模なアーキテクチャに匹敵するパフォーマンスを維持できます。
+					</p>
+
+					<h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; margin-top: 1.5rem; color: var(--color-text);">フィジカルAIの未来</h3>
+					<p class="post-excerpt" style="margin-top: 0.5rem;">
+						ソフトウェアにとどまらず、ロボティクスの進歩も大きな見どころでした。ロボットが前方宙返りをするデモンストレーションを見ましたが、これは「フィジカル（物理的）AI」とモーター制御がどう進化しているかを示す驚くべき展示でした。その敏捷性を目の当たりにして、ハードウェアイノベーションのスピードを肌で実感しました。
+					</p>
+				</div>
+				<p class="post-excerpt" style="margin-top: 1rem;">
+					最後に、GTC最終日に行われたハッカソン（Gen Jam）に参加しました。テーマは「AIと共に創るポジティブな未来」で、AI生成による動画制作に焦点を当てていました。私は動画制作にMachine Cinemaを使用しました。AIを使って動画を作るのは魅力的な体験であっただけでなく、この技術がアニメーションや商業映像業界に今後どのような影響を与えるかを考える良い機会にもなりました。
+				</p>
+			</div>
+
 			<div class="blog-post" id="ai-tinkerers">
 				<h2 class="post-title">日本でのAI Tinkerers Meetup</h2>
 				<div class="post-date">2026年1月</div>
